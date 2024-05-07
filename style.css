@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Sedan+SC&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+   align-items: center;
+   background-color: #e0e3eb;
+}
+.app-name{
+    font-family: "Sedan SC", serif;
+    color: #4e95cf;
+    font-size: 42px;
+}
+.container{
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    margin:3px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.display, .result{
+    height: 50px;
+    width:100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: right;
+    outline: none;
+    border:none;
+    font-size: 25px;
+    color: #000e1a;
+    pointer-events: none;
+    /* background-color: #4e95cf; */
+}
+.display{
+    color:#4e95cf;
+}
+.result{
+    display: none;
+    font-size: 30px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+.buttons button{
+    padding:  10px;
+    border-radius: 6px;
+    border:none;
+    background-color: #eee;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttons button:active{
+    transform: scale(0.99);
+}
+.operator{
+    color: #4e95cf;
+}
+#resultOp{
+    background-color: #4e95cf;
+    color:#eee;
+}
+.buttons button:hover{
+    background-color: #4e95cf;
+    color: #eee;
+}
+.icon-container{
+    display: flex;
+    justify-content: right;
+}
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color:#4e95cf;
+}
+
